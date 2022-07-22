@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
 
-# The obligatory hellow world scrypt.
+# The obligatory hello world scrypt.
 print('hello world')
 
