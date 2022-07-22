@@ -22,4 +22,6 @@
 
 #### Tutorials Followed From...
 1. https://pythonbasics.org/
-2. 
+2. https://www.geeksforgeeks.org/taking-input-in-python/
+3. https://pynative.com/python-check-user-input-is-number-or-string/
+4. https://kodify.net/python/if-else/if-conditions/
