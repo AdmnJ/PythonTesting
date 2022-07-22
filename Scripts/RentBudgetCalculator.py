@@ -25,8 +25,8 @@ while True:
 while True:
     pay = input('How much are you paid?\n'
                 '$:')
-    if pay.strip().isdigit():
-        pay = float(pay)
+    if (pay.strip().isdigit()) or (float(pay.strip()) % 1 > .01):  # added support for floating points
+        pay = float(pay.strip())
         break
 # Calculate monthly income
 if frequency == 'Y':
@@ -48,17 +48,18 @@ print("$%.2f is your approximate monthly income." % monthly)
 while True:
     per = input('What percent of your monthly income would you like to budget for rent?\n'
                 '%:')
-    if per.strip().isdigit():
-        per = float(per)
+    # checks to make sure input is either whole integer or floating point.
+    if (per.strip().isdigit()) or (float(per.strip()) % 1 > .01):  # added support for floating points
+        per = float(per.strip())  # converts  variable to float
         break
 # If percentage stored in per is over 1, assume it is a whole percentage and divide by 100
 if per > 1.0:
     per = (per/100)
-fullper = (per*100)
+full_per = (per*100)
 # Calculate percentage for rental budget and subtract that from income to give rough estimate of monthly funds remaining
 budget = (per*monthly)
 remain = (monthly-budget)
 # Give them their rental budget
-print("You decided to budget %.0f-percent of your estimated monthly income for rent." % fullper)
+print("You decided to budget %.0f-percent of your estimated monthly income for rent." % full_per)
 print("Budget amount for monthly rent is $%.2f" % budget)
 print("That leaves you with approximately just $%.2f remaining after rent each month" % remain)
