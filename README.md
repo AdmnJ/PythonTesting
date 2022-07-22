@@ -18,4 +18,8 @@
 3. Likely many mistakes
 	* Code here is and will be highly disposable and thus if it has not branched out into it's one project it will likely not be updated.
 4. Maybe some class work.
-	+ Going to take a class in Python in the coming semester so I may add some of that work here. (No promises though)
+    + Going to take a class in Python in the coming semester so I may add some of that work here. (No promises though)
+
+#### Tutorials Followed From...
+1. https://pythonbasics.org/
+2. 
